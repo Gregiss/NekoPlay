@@ -1,0 +1,300 @@
+:root{
+    --foreground-1: #fff;
+    --foreground-2: #dcddde;
+    --foreground-3: #b9bbbe;
+    --foreground-effect-1: #72767d;
+    --foreground-effect-2: #4f545c;
+    --background-1: #36393f;
+    --background-2: #2f3136;
+    --background-3: #202225;
+    --background-effect-1: #40444b;
+    --background-effect-2: #292b2f;
+    --muted-channels: #4f545c;
+    --dividers: #292b2f;
+}
+
+::placeholder, body, button, input, select, textarea {
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-width: initial;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+        visibility: hidden;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+    background-color: #202225;
+    border-color: transparent;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: move;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(32,34,37,.6);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(32,34,37,.6);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-corner,::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-corner:hover,::-webkit-scrollbar-corner:hover {
+    background-color: rgba(32,34,37,.6);
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body, html{
+    background: var(--background-3);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a, button, div, input, select, span, strong, textarea {
+    outline: 0;
+}
+
+button{
+    outline: none;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: rgba(0,0,0,.50);
+    opacity: 1;
+    position: fixed;
+    z-index: 200;
+    height: 40px;
+}
+
+header h1{
+    font-size: 32px;
+    position: relative;
+    top: 2px;
+}
+
+button:hover{
+    background-color: #677bc4;
+}
+
+.destaque{
+    width: 105%;
+    height: 45%;
+    position: absolute;
+    background: var(--background-effect-2);
+    top: 0px;
+    background-image: url('');
+    background-size: cover;
+}
+
+.destaque::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(transparent, var(--background-3));
+    z-index: 50;
+    left: 0px;
+    transform: scale(1.05);
+}
+
+form input{
+    border-color: #040405;
+    color: #f6f6f7;
+    background-color: rgba(0,0,0,.50);
+    border-color: #7289da;
+    padding: 10px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    -webkit-transition: background-color .15s ease,border .15s ease;
+    transition: background-color .15s ease,border .15s ease;
+    outline: none;
+    margin-top: 40px;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+form span{
+    color: #b9bbbe;
+    float: left;
+    left: 0px;
+    position: relative;
+    top: 30px;
+    font-size: 15px;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+form button{
+    color: #fff;
+    background-color: #7289da;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+form input:focus{
+    border-color: #7289da !important;
+}
+
+.search{
+    position: relative;
+    width: 40vw;
+    top: -76px;
+    left: 170px;
+}
+
+.search button{
+    position: absolute;
+    top: 40px;
+    float: right;
+    right: 0px;
+    padding: 8px;
+}
+
+.destaque h1, h2{
+    position: absolute;
+    top: 45%;
+    z-index: 500;
+    left: 10%;
+}
+
+.destaque h2{
+    top: 56%;
+}
+
+.destaque button{
+    position: relative;
+    top: 68%;
+    z-index: 500;
+    left: 10%;
+    color: #fff;
+    background-color: #7289da;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.carrousel{
+    position: absolute;
+    top: 39%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 60%;
+    z-index: 1000;
+}
+
+.carrousel h1{
+    padding: 20px;
+}
+
+.slider{
+    width: 100%;
+    min-width: 99vw;
+    padding: 10px;
+    position: relative;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.slider .anime_slider{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.slider .anime_slider img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 411px){
+    .slider .anime_slider{
+        width: 200px;
+        height: 150px;
+    }
+
+    .destaque h1, h2{
+        left: 3%;
+    }
+}
